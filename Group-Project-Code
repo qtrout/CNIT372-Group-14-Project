@@ -1,3 +1,22 @@
 --CNIT 372 Group 14 MILESTONE 3
 --Quinn Trout, Sindhu Vajrala, Haotian Li
 
+DATAbase
+
+create table global_youtube_stats(
+    subscribers number,
+    video_views number,
+    category varchar2(100),
+    uploads number,
+    abbreviation varchar2(100),
+    channel_type varchar2(100),
+    video_views_last_month number,
+    lowest_monthly_earnings number,
+    highest_monthly_earnings number,
+    lowest_yearly_earnings number,
+    highest_yearly_earnings number,
+    subscribers_for_last_30_days number,
+    created_year date,
+    created_month date,
+    created_day date
+);
