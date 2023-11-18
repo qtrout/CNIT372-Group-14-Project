@@ -110,7 +110,21 @@ create table global_youtube_stats(
     created_day date
 );
 
+--Question 2 What types of videos recieve the most views?
 
+select channel_type as type, max(video_views) as views
+from global_youtube_stats
+group by channel_type
+order by views desc
+fetch first 5 rows only;
+
+TYPE                                                                                                      VIEWS
+---------------------------------------------------------------------------------------------------- ----------
+Music                                                                                                2.2800E+11
+Education                                                                                            1.6400E+11
+Entertainment                                                                                        1.4800E+11
+People                                                                                               9.0479E+10
+Sports                                                                                               7.7428E+10
 
 
 --Question 7 What country has the most video creators?
@@ -120,6 +134,9 @@ GROUP BY abbreviation
 ORDER BY creators_count DESC
 FETCH FIRST 1 ROW ONLY;
 
+COUNTRY                                                                                              CREATORS_COUNT
+---------------------------------------------------------------------------------------------------- --------------
+US                                                                                                              312
 
 
 
@@ -130,4 +147,17 @@ FROM global_youtube_stats
 ORDER BY video_views_last_month DESC
 FETCH FIRST 10 ROWS ONLY;
 
+YOUTUBER                                                                                             VIDEO_VIEWS_LAST_MONTH
+---------------------------------------------------------------------------------------------------- ----------------------
+Music                                                                                                                      
+Happy Lives                                                                                                      6589000000
+Dan-Sa / Daniel Saboya                                                                                           6148000000
+ýýýýýýýýý KIMPRO                                                                                                 3404000000
+DaFuq!?Boom!                                                                                                     2304000000
+Calon Sarjana                                                                                                    2292000000
+T-Series                                                                                                         2258000000
+KL BRO Biju Rithvik                                                                                              2033000000
+Cocomelon - Nursery Rhymes                                                                                       1975000000
+SET India                                                                                                        1824000000
 
+10 rows selected. 
