@@ -3,8 +3,8 @@
 
 --Project Description and Questions
 
-Project Description:
-
+--Project Description:
+/*
 YouTube has more than 2.70 billion monthly active users as of 2023. YouTube Premium and Music together have more than 80 million subscribers in the world. More than ¼ of the world's population uses YouTube every month (source). 
 YouTube has also been widely used in different geographical areas, by people with different ideological beliefs, for various purposes ranging from advertising products to political campaigns. Research has shown that the recommendation system of YouTube can be biased and trap users in filter bubbles of misinformation, radical or extreme content (Tomlein et al., Srba et al.). 
 Putting on the hat of a curious intellectual, what do you want to know about the design, use, and impact of YouTube algorithms, content, and platform?
@@ -15,10 +15,11 @@ How did we come up with the project goal:
 We derived the project goal by brainstorming the various ways in which user activity shapes the landscape of Youtube. “Profiles” affiliated with YouTube include: content creators, advertisers, viewers, Youtube staff, Youtube executives. Of these groups, we learned that YouTube users generate the largest amount of data. We have chosen to define YouTube users as people who subscribe and view content. 
 Our next step was to understand how user data impacts YouTube’s functions. YouTube algorithms and metrics collection methods are based on tracked user behavioral patterns. Revenue is generated on Youtube by analyzing user interactions and interests, pushing targeted marketing initiatives. Youtube’s homepage, which serves as its public face, displaying both recommendations and trending regional videos, are also dictated by user statistics. New features, such as the “Made for Kids” audience option, are usually the result of concerns raised by users. 
 From the larger analysis on user data impact, our project goal was finalized. We will focus on how trends in user interaction have changed over time. We may analyze how usage of YouTube features (likes, comments sections etc) has shifted in recent years. Another focus area could be the efficacy of recent user interaction features.
+*/
 
 
-
-Questions:
+--Questions:
+/*
 How have user engagement methods changed over time? 
 User signal data listing the frequency of the usage of the likes, save, share and comment features will be sorted. 
 The max and count functions can be used to understand which features were most used over time. 
@@ -65,6 +66,10 @@ Which creators have the most significant total watch time over the last quarter?
 We should use data functions for filtering, aggregate functions to compute grath, and ordering by growth in descending order.
 This question allows platform managers to identify and support the fast-growing creators.
 
+
+Everyone discussed the questions we wanted to cover and how we thought we could accomplish finding the answers for the questions by using the concept we have been covering in class.
+
+*/
 
 --Steps for importing data from file on brightspace
 
@@ -161,3 +166,26 @@ Cocomelon - Nursery Rhymes                                                      
 SET India                                                                                                        1824000000
 
 10 rows selected. 
+
+
+
+
+
+
+
+
+
+
+
+
+--Contributions
+
+/*
+Quinn developed the GitHub repritory and set up the data to be imported into a database table and completed question 2.
+
+Li covered questions 7 and 10.
+
+Sindhu covered questions 3 and 4.
+
+Everyone discussed which questions we wanted to cover for this milestone and who was going to do what for the milestone.
+*/
