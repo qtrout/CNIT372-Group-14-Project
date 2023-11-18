@@ -28,7 +28,7 @@ What types of videos receive the most views?
 We should use aggregate functions such as count and max to determine the videos that have the most views
 This question will allow creators and managers to track evolving content preferences, ensuring they stay current and cater to audience demands.
 
-What videos are most popular during different times?
+What videos are most popular during different times of the year?
 We would determine the video with the most views with using a count and outputting the type of video that video is then narrow down the difference in season by only outputting video during a specific season in the where section
 We would use nested functions to more easily split up the data into the proper groups we want
 
