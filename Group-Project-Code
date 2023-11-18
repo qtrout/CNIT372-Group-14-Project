@@ -1,6 +1,71 @@
 --CNIT 372 Group 14 MILESTONE 3
 --Quinn Trout, Sindhu Vajrala, Haotian Li
 
+--Project Description and Questions
+
+Project Description:
+
+YouTube has more than 2.70 billion monthly active users as of 2023. YouTube Premium and Music together have more than 80 million subscribers in the world. More than ¼ of the world's population uses YouTube every month (source). 
+YouTube has also been widely used in different geographical areas, by people with different ideological beliefs, for various purposes ranging from advertising products to political campaigns. Research has shown that the recommendation system of YouTube can be biased and trap users in filter bubbles of misinformation, radical or extreme content (Tomlein et al., Srba et al.). 
+Putting on the hat of a curious intellectual, what do you want to know about the design, use, and impact of YouTube algorithms, content, and platform?
+
+
+How did we come up with the project goal:
+
+We derived the project goal by brainstorming the various ways in which user activity shapes the landscape of Youtube. “Profiles” affiliated with YouTube include: content creators, advertisers, viewers, Youtube staff, Youtube executives. Of these groups, we learned that YouTube users generate the largest amount of data. We have chosen to define YouTube users as people who subscribe and view content. 
+Our next step was to understand how user data impacts YouTube’s functions. YouTube algorithms and metrics collection methods are based on tracked user behavioral patterns. Revenue is generated on Youtube by analyzing user interactions and interests, pushing targeted marketing initiatives. Youtube’s homepage, which serves as its public face, displaying both recommendations and trending regional videos, are also dictated by user statistics. New features, such as the “Made for Kids” audience option, are usually the result of concerns raised by users. 
+From the larger analysis on user data impact, our project goal was finalized. We will focus on how trends in user interaction have changed over time. We may analyze how usage of YouTube features (likes, comments sections etc) has shifted in recent years. Another focus area could be the efficacy of recent user interaction features.
+
+
+
+Questions:
+How have user engagement methods changed over time? 
+User signal data listing the frequency of the usage of the likes, save, share and comment features will be sorted. 
+The max and count functions can be used to understand which features were most used over time. 
+
+What types of videos receive the most views?
+We should use aggregate functions such as count and max to determine the videos that have the most views
+This question will allow creators and managers to track evolving content preferences, ensuring they stay current and cater to audience demands.
+
+What videos are most popular during different times?
+We would determine the video with the most views with using a count and outputting the type of video that video is then narrow down the difference in season by only outputting video during a specific season in the where section
+We would use nested functions to more easily split up the data into the proper groups we want
+
+What are the top 5 most commonly used keywords in the search data for the past month?
+(what are the top 5 channel types?)
+(What are the top 5 channel types over the last 30 days?) 
+Using the Search_Data table we can track the number of times a word appears using a combination of aggregate functions and the Like function to search for every time the same word appears and determine which ones appear the most
+Provides insights into trending topics, enabling creators to produce more relevant content.
+
+How have trends in advertising strategies changed over time?
+Group advertisement data by time intervals and strategy type, then count occurrence or results for each period and strategy.
+Identifying which advertising strategies are trending helps companies optimize marketing investments.
+
+Which video category has the most saved videos but the least shares in the past six months?
+We can group videos by category, sum the saved and shared metrics separately, filter for the last six months, and compare saved to shared ratios.
+This question can help creators understand what video content that users prefer to keep for themselves rather than sharing.
+
+Do longer videos receive more likes per view then shorter videos?
+(What country has the most video creators?)
+We would compare the difference of views through using aggregate functions such as min and max to get the videos with the shortest and longest runtimes and then take the average of the amount of likes the shortest and longest videos get and see which type of video has more likes based on the averages
+This will guide creators in understanding the potential relationship between video length and engagement, assisting in content optimization.
+
+Are there certain hours of the day when the search activity peaks?
+We are going to use date and time functions like HOUR(),  and count occurrences, and identify hours with peak counts.
+This question will help Youtube creators understand user activity patterns, and their video might get more views based on the result of this question.
+
+What type of non-video uploads get more user interaction?
+Data about user interaction data from community posts, creator updates, polls will be aggregated. 
+The count and max functions will be used to understand which non-video feature is most popular. 
+This question gives YouTube creators the ability to understand how content creation on the website can be most effectively diversified. 
+
+Which creators have the most significant total watch time over the last quarter?
+(Which creators have the most significant watch times over the last 30 days?
+)
+We should use data functions for filtering, aggregate functions to compute grath, and ordering by growth in descending order.
+This question allows platform managers to identify and support the fast-growing creators.
+
+
 --Steps for importing data from file on brightspace
 
 /*
