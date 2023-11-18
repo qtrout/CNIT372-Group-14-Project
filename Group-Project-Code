@@ -20,3 +20,25 @@ create table global_youtube_stats(
     created_month date,
     created_day date
 );
+
+
+
+
+--Question 7 What country has the most video creators?
+SELECT abbreviation AS country, COUNT(*) AS creators_count
+FROM global_youtube_stats
+GROUP BY abbreviation
+ORDER BY creators_count DESC
+FETCH FIRST 1 ROW ONLY;
+
+
+
+
+--Question 10 Which creators have the most significant watch times over the last 30 days?
+
+SELECT Youtuber, video_views_last_month
+FROM global_youtube_stats
+ORDER BY video_views_last_month DESC
+FETCH FIRST 10 ROWS ONLY;
+
+
