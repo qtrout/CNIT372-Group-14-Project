@@ -1,9 +1,33 @@
 --CNIT 372 Group 14 MILESTONE 3
 --Quinn Trout, Sindhu Vajrala, Haotian Li
 
-DATAbase
+--Steps for importing data from file on brightspace
+
+/*
+Got to brightspace and download the file Global Youtube Statistics
+Open SQL Developer
+Create a table to hold the columns: youtuber varchar2(100), subscribers number, video_views number, category varchar2(100), uploads number,
+abbreviation varchar2(100), channel_type varchar2(100), video_views_last_month number, lowest_monthly_earnings number, highest_monthly_earnings number,
+lowest_yearly_earnings number, highest_yearly_earnings number, subscribers_for_last_30_days number, created_year date, created_month date, created_day date
+Right clicked the new table created
+Clicked import data
+Click browse
+Clicked the file you downloaded holding the data for Global Youtube Statistics
+Click next
+Clicked next
+Double click the following columns to remove them from importing: rank, title, country, video view rank, country rank, channel rank, 
+gross tertiary education enrollment, population, unemployment rate, urban population, latitude, longitude
+Click next
+Change video views to the video_views column and video views for the last 30 days to video_views_last_month
+Change the format of created_year to RRRR, created_month to month, and created_day to DD
+Click next
+Click Finish
+*/
+
+--Table to hold the imported data from Global YouTube Statistics file on brightspace
 
 create table global_youtube_stats(
+    youtuber varchar2(100),
     subscribers number,
     video_views number,
     category varchar2(100),
