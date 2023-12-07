@@ -110,6 +110,20 @@ create table global_youtube_stats(
     created_day date
 );
 
+-- Table for videos
+
+create table video
+as
+select youtuber, video_views, category, video_views_last_month, created_year, created_month,
+created_day
+from global_youtube_stats;
+
+alter table video
+add video_id varchar2(100)
+add upload_time date
+add total_watch_time number; 
+
+
 --Question 2 What types of videos recieve the most views?
 
 select channel_type as type, max(video_views) as views
